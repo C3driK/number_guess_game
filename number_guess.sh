@@ -4,7 +4,6 @@ PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 MAIN_MENU (){
   # create random number avriable
   SECRET=$((1 + RANDOM % 1000))
-  echo $SECRET
   echo "Enter your username:"
   read USERNAME
   # check DB for record of username
